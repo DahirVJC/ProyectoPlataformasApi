@@ -6,3 +6,11 @@ This is the API for the proyect: [PancakePanda94/ProyectoPlataformas](https://gi
 Web client: WIP
 
 Android client: WIP
+
+# Database information
+
+MySQL
+
+CREATE SCHEMA `proyecto_final` ;
+
+Credentials in application.properties
