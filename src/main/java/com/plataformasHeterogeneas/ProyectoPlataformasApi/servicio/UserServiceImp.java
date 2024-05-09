@@ -22,7 +22,7 @@ public class UserServiceImp implements UserService{
             return null;
         }
         for(User u : userRepositoryAll){
-            if(u.getName().equals(name)){
+            if(u.getUserName().equals(name)){
                 return u;
             }
         }
@@ -40,6 +40,16 @@ public class UserServiceImp implements UserService{
             return user;
         }
         return null;
+    }
+
+    @Override
+    public void increaseEnemiesDefeated(long id) {
+        Optional<User> optionalUser = getUserById(id);
+        if (optionalUser.isPresent()) {
+            User user = optionalUser.get();
+            int enemies = user.getEnemiesDefeated() + 1;
+            user.setEnemiesDefeated(enemies);
+        }
     }
 
     @Override

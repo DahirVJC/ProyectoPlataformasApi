@@ -9,6 +9,6 @@ public interface UserService {
     User getUserByName(String name);
     User register(User U);
     User login(String name, String password);
-    void increaseEnemiesDefeated();
+    void increaseEnemiesDefeated(long id);
     boolean deleteUser(long id);
 }

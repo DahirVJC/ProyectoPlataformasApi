@@ -31,6 +31,12 @@ public class UserController {
         return userService.getUserById(id);
     }
 
+    @PutMapping("/increase/{id}")
+    public String increaseEnemiesDefeated(@PathVariable long id){
+        userService.increaseEnemiesDefeated(id);
+        return HttpStatus.OK.toString();
+    }
+
     @DeleteMapping("/delete/{id}")
     public Boolean deleteUser(@PathVariable long id){
         if(getUserById(id).isEmpty()) {
@@ -41,7 +47,7 @@ public class UserController {
     }
     @PutMapping("update")
     public String updateUser(@RequestBody User u){
-        userService.registerUser(u);
+        userService.register(u);
         return HttpStatus.OK.toString();
     }
 }
