@@ -29,23 +29,12 @@ public class UserServiceImp implements UserService{
         return null;
     }
     @Override
-    public User searchUser(String name){
-        User user = getUserByName(name);
-        if(!user.equals(null)){
-            User dummy = user;
-            dummy.setId(0);
-            dummy.setPassword("REDACTED");
-            return dummy;
-        }
-        return null;
-    }
-    @Override
-    public User registerUser(User U) {
+    public User register(User U) {
         return userRepository.save(U);
     }
 
     @Override
-    public User loginUser(String name, String password) {
+    public User login(String name, String password) {
         User user = getUserByName(name);
         if(user.getPassword().equals(password)){
             return user;

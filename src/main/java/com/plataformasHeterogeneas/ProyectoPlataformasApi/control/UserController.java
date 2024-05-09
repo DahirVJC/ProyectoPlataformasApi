@@ -16,23 +16,19 @@ public class UserController {
     UserService userService;
     @PostMapping("/register")
     public User registerUser(@RequestBody User u){
-        return userService.registerUser(u);
+        return userService.register(u);
     }
 
     @GetMapping("/login")
     @ResponseBody
     public User getUserByIdAndName(@RequestParam String name, @RequestParam String password){
         // ?name=x&password=x
-        return userService.loginUser(name, password);
+        return userService.login(name, password);
     }
 
     @GetMapping("/find/{id}")
     public Optional<User> getUserById(@PathVariable long id){
         return userService.getUserById(id);
-    }
-    @GetMapping("/search/{name}")
-    public User getUserByName(@PathVariable String name){
-        return userService.searchUser(name);
     }
 
     @DeleteMapping("/delete/{id}")
