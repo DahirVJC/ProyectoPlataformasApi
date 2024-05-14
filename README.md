@@ -1,9 +1,9 @@
 # ProyectoPlataformasApi
 2D Unity game connected to a MySQL Database
 
-This is the API for the proyect: [PancakePanda94/ProyectoPlataformas](https://github.com/PancakePanda94/ProyectoPlataformas/tree/master)
+This is the API for the proyect: [PancakePanda94/ProyectoPlataformas](https://github.com/PancakePanda94/ProyectoPlataformas)
 
-Web client: WIP
+Web client: [DahirVJC/ProyectoPlataformasWebApp](https://github.com/DahirVJC/ProyectoPlataformasWebApp.git)
 
 Android client: WIP
 
