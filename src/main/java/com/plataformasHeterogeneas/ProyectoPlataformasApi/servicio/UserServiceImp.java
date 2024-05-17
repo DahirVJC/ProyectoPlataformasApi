@@ -49,6 +49,7 @@ public class UserServiceImp implements UserService{
             User user = optionalUser.get();
             int enemies = user.getEnemiesDefeated() + 1;
             user.setEnemiesDefeated(enemies);
+            userRepository.save(user);
         }
     }
 
