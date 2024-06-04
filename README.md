@@ -5,7 +5,7 @@ This is the API for the proyect: [PancakePanda94/ProyectoPlataformas](https://gi
 
 Web client: [DahirVJC/ProyectoPlataformasWebApp](https://github.com/DahirVJC/ProyectoPlataformasWebApp.git)
 
-Android client: WIP
+Android client: [Denji03/ProyectoFinal_PlataformasHeterogeneas_Android](https://github.com/Denji03/ProyectoFinal_PlataformasHeterogeneas_Android)
 
 # Database information
 
